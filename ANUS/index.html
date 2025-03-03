@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananya Reddy - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #A5C8D6, #F0F4F8);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #A5C8D6;
+            padding: 50px 0;
+            border-radius: 0 0 20px 20px;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 40px;
+            background: #F0F4F8;
+            border-radius: 10px;
+        }
+        .profile-text {
+            max-width: 600px;
+            font-size: 18px;
+        }
+        .profile-pic {
+            width: 220px;
+            height: 220px;
+            border: 5px solid #A5C8D6;
+            border-radius: 10px;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill {
+            background: #A5C8D6;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .projects .project {
+            display: inline-block;
+            width: 45%;
+            margin: 20px;
+            background: #A5C8D6;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .projects .project:hover {
+            transform: scale(1.05);
+        }
+        .projects .project a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .contact {
+            background: #A5C8D6;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact a {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact input, .contact textarea {
+            width: 90%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact button:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 10px 10px 0 0;
+        }
+        footer a {
+            color: #A5C8D6;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <div class="profile-text">
+                <h1>Ananya Reddy</h1>
+                <p>Software Developer | Web Enthusiast</p>
+                <p>Passionate about Web Development and AI, I enjoy creating visually appealing and interactive applications.</p>
+            </div>
+            <img src="profilepic.jpg" class="profile-pic">
+        </div>
+    </header>
+    <div class="container">
+        <section class="section skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">C</div>
+                <div class="skill">Python</div>
+                <div class="skill">Java</div>
+                <div class="skill">C++</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">SQL</div>
+            </div>
+        </section>
+        <section class="section projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Tourism Exploring Places</h3>
+                <p>A website showcasing beautiful tourist destinations with information and images.</p>
+            </div>
+            <div class="project">
+                <h3>Maize Leaf Disease Detection</h3>
+                <p>Implemented Deep Learning models for early disease detection in maize crops.</p>
+                <a href="https://ieeexplore.ieee.org/document/10775057" target="_blank">View Project</a>
+            </div>
+        </section>
+    </div>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p><strong>Email:</strong> <a href="mailto:addiananyareddy@gmail.com">addiananyareddy@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ananya-reddy-b01245259/" target="_blank">Ananya Reddy</a></p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy;All Copyrights reserved | Designed by Ananya Reddy.</p>
+        <p>
+            <a href="#">Back to Top</a> | 
+            <a href="https://www.linkedin.com/in/ananya-reddy-b01245259/" target="_blank">LinkedIn</a> | 
+            <a href="mailto:addiananyareddy@gmail.com">Email Me</a>
+        </p>
+    </footer>
+</body>
+</html>
